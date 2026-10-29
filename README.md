@@ -11,4 +11,12 @@ Site fictício de venda de ingressos para um cinema particular em casa. Um proje
 # Porque considero importante?
 fazendo um projeto simples desse utilizando HTML, CSS, JS e GitHub, aprimoro meus conhecimentos na área e nas ferramentas utilizadas. sem contar que utilizo estrutura básica de um site, estilização e funcionamento.
 
+# Como rodar o site
+
+1. abrir o repositório;
+2. Clonar o repositório;
+3. Acessar a pasta do projeto;
+4. Abrir no Visual Studio Code;
+5. Executar o projeto
+
 desenvolvido por: Kaio Henrique Cardoso Soares / Estudante de ADS
