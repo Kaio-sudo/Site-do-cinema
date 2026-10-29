@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#130d11">
+    <meta name="description" content="Uma sessão de cinema especial e exclusiva para Geovanna.">
+    <title>CineLove — uma sessão para você</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <main>
+        <section class="welcome-screen" id="welcomeScreen" aria-labelledby="welcomeTitle">
+            <a class="brand brand-centered" href="#" aria-label="CineLove, início">
+                <span class="brand-icon" aria-hidden="true">♥</span>
+                <span>Cine<span>Love</span></span>
+            </a>
+
+            <div class="welcome-card">
+                <span class="eyebrow"><span class="eyebrow-line"></span> UM CONVITE ESPECIAL <span
+                        class="eyebrow-line"></span></span>
+                <div class="welcome-clapper" aria-hidden="true">
+                    <span class="clapper-top"></span>
+                    <span class="clapper-body"><span>♥</span></span>
+                </div>
+                <h1 id="welcomeTitle">Uma tarde de cinema<br>feita <em>para você.</em></h1>
+                <p class="welcome-copy">Tem um convite esperando por alguém muito especial.<br>Para começar, me conta
+                    seu nome?</p>
+                <form id="accessForm" novalidate>
+                    <label class="sr-only" for="visitorName">Seu nome</label>
+                    <input id="visitorName" name="visitorName" type="text" autocomplete="given-name"
+                        placeholder="Seu nome" required>
+                    <p class="form-message" id="accessMessage" aria-live="polite"></p>
+                    <button class="button button-primary button-full" type="submit">
+                        <span>Entrar no CineLove</span><span aria-hidden="true">→</span>
+                    </button>
+                </form>
+                <p class="private-note"><span aria-hidden="true">✦</span> Um cantinho reservado para uma pessoa especial
+                </p>
+            </div>
+            <p class="welcome-footer">PREPARE A PIPOCA <span aria-hidden="true">·</span> NOSSA TARDE ESPECIAL</p>
+        </section>
+
+        <section class="home-screen hidden" id="homeScreen" aria-labelledby="homeTitle">
+            <header class="site-header">
+                <a class="brand" href="#" aria-label="CineLove, início">
+                    <span class="brand-icon" aria-hidden="true">♥</span>
+                    <span>Cine<span>Love</span></span>
+                </a>
+                <span class="header-note"><span class="status-dot"></span> SESSÃO EXCLUSIVA</span>
+            </header>
+
+            <div class="home-content">
+                <section class="hero">
+                    <div class="hero-copy">
+                        <span class="eyebrow"><span class="eyebrow-line"></span> SEU CONVITE CHEGOU</span>
+                        <h1 id="homeTitle">Oi, Geovanna.<br><em>Essa tarde é nossa.</em></h1>
+                        <p>Prepare o coração — e a pipoca. Uma sessão especial está esperando por você.</p>
+                        <a class="button button-primary hero-button" href="#filme">
+                            <span>Descobrir seu convite</span><span aria-hidden="true">↓</span>
+                        </a>
+                    </div>
+                    <div class="hero-art" aria-hidden="true">
+                        <div class="hero-halo"></div>
+                        <div class="film-reel reel-one"><span></span></div>
+                        <div class="film-reel reel-two"><span></span></div>
+                        <div class="heart-orbit">♥</div>
+                        <div class="hero-ticket">
+                            <span class="ticket-topline">CINELOVE <span>№ 07</span></span>
+                            <span class="ticket-heart">♥</span>
+                            <span class="ticket-caption">UMA TARDE<br>INESQUECÍVEL</span>
+                            <span class="ticket-stub">GEOVANNA <span>07 · NOV</span></span>
+                        </div>
+                        <span class="sparkle sparkle-one">✦</span>
+                        <span class="sparkle sparkle-two">✧</span>
+                        <span class="sparkle sparkle-three">✦</span>
+                    </div>
+                </section>
+
+                <section class="session-bar" aria-label="Detalhes da sessão">
+                    <div class="session-detail">
+                        <span class="detail-icon" aria-hidden="true">▦</span>
+                        <span><small>DATA DA SESSÃO</small><strong>07 de novembro, 2026</strong></span>
+                    </div>
+                    <span class="detail-divider" aria-hidden="true"></span>
+                    <div class="session-detail">
+                        <span class="detail-icon" aria-hidden="true">⌂</span>
+                        <span><small>ONDE</small><strong>Minha casa</strong></span>
+                    </div>
+                    <span class="detail-divider" aria-hidden="true"></span>
+                    <div class="session-detail">
+                        <span class="detail-icon" aria-hidden="true">♡</span>
+                        <span><small>COMPANHIA</small><strong>Só nós dois</strong></span>
+                    </div>
+                </section>
+
+                <section class="movie-section" id="filme" aria-labelledby="movieHeading">
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow"><span class="eyebrow-line"></span> A ATRAÇÃO DA TARDE</span>
+                            <h2 id="movieHeading">Um filme <em>surpresa.</em></h2>
+                        </div>
+                        <span class="surprise-label"><span aria-hidden="true">✦</span> SEGREDO ATÉ A HORA</span>
+                    </div>
+                    <article class="movie-card">
+                        <div class="poster" aria-label="Pôster do filme surpresa">
+                            <div class="poster-frame">
+                                <span class="poster-kicker">CINELOVE APRESENTA</span>
+                                <span class="poster-heart" aria-hidden="true">♥</span>
+                                <span class="poster-title">Uma história<br>para guardar</span>
+                                <span class="poster-bottom">TÍTULO EM SEGREDO <span>✦</span></span>
+                            </div>
+                            <span class="poster-tag">EXCLUSIVO</span>
+                        </div>
+                        <div class="movie-info">
+                            <span class="movie-label">ESCOLHIDO COM CARINHO</span>
+                            <h3>O filme é surpresa<span>.</span></h3>
+                            <p>O título fica guardado a sete chaves — por enquanto. Só posso prometer uma boa história,
+                                pipoca quentinha e a melhor companhia.</p>
+                            <div class="movie-meta">
+                                <span><span class="meta-dot"></span> FILME SURPRESA</span>
+                                <span class="meta-separator">·</span>
+                                <span>ESCOLHIDO A DEDO</span>
+                            </div>
+                            <div class="movie-divider"></div>
+                            <button class="button button-primary ticket-button" id="openConfirm" type="button">
+                                <span>Garantir meu ingresso</span><span aria-hidden="true">→</span>
+                            </button>
+                            <span class="button-caption"><span aria-hidden="true">♥</span> Seu lugar especial já está
+                                reservado</span>
+                        </div>
+                    </article>
+                </section>
+                <footer class="site-footer"><span>FEITO COM AMOR, PARA GEOVANNA</span><span>CINELOVE <span
+                            class="footer-heart">♥</span> 2026</span></footer>
+            </div>
+        </section>
+
+        <dialog class="confirm-dialog" id="confirmDialog" aria-labelledby="confirmTitle">
+            <button class="dialog-close" id="closeConfirm" type="button" aria-label="Fechar">×</button>
+            <span class="dialog-heart" aria-hidden="true">♥</span>
+            <span class="eyebrow"><span class="eyebrow-line"></span> QUASE LÁ <span class="eyebrow-line"></span></span>
+            <h2 id="confirmTitle">A tarde é <em>nossa?</em></h2>
+            <p>Confirme sua presença para gerar seu ingresso personalizado. O filme continua sendo segredo!</p>
+            <button class="button button-primary button-full" id="generateTicket" type="button">
+                <span>Sim, quero meu ingresso</span><span aria-hidden="true">→</span>
+            </button>
+            <button class="text-button" id="cancelConfirm" type="button">Ainda não</button>
+        </dialog>
+
+        <section class="ticket-screen hidden" id="ticketScreen" aria-labelledby="ticketHeading">
+            <header class="site-header ticket-header">
+                <a class="brand" href="#" aria-label="CineLove">
+                    <span class="brand-icon" aria-hidden="true">♥</span>
+                    <span>Cine<span>Love</span></span>
+                </a>
+                <span class="header-note"><span class="status-dot"></span> INGRESSO CONFIRMADO</span>
+            </header>
+            <div class="ticket-content">
+                <span class="eyebrow"><span class="eyebrow-line"></span> SEU LUGAR ESTÁ GARANTIDO <span
+                        class="eyebrow-line"></span></span>
+                <h1 id="ticketHeading">Esse ingresso é <em>todo seu.</em></h1>
+                <p class="ticket-intro">Agora é só contar os dias. A surpresa fica por minha conta. ♥</p>
+                <article class="digital-ticket" id="digitalTicket" aria-label="Ingresso digital CineLove">
+                    <div class="ticket-main">
+                        <div class="ticket-main-top">
+                            <span class="ticket-brand"><span aria-hidden="true">♥</span> CINELOVE</span>
+                            <span class="ticket-type">INGRESSO ESPECIAL</span>
+                        </div>
+                        <span class="ticket-movie-label">UMA SESSÃO PARA</span>
+                        <h2>Geovanna<span>.</span></h2>
+                        <p class="ticket-movie">Filme surpresa <span>·</span> escolhido com carinho</p>
+                        <div class="ticket-details">
+                            <div><small>DATA</small><strong>07 NOV 2026</strong></div>
+                            <div><small>LOCAL</small><strong>Minha casa</strong></div>
+                            <div><small>SESSÃO</small><strong>Exclusiva</strong></div>
+                        </div>
+                        <p class="ticket-love">uma tarde, uma história, nós dois <span>♥</span></p>
+                    </div>
+                    <div class="ticket-side">
+                        <span class="side-heart" aria-hidden="true">♥</span>
+                        <span class="side-label">CÓDIGO DO INGRESSO</span>
+                        <strong class="ticket-code" id="ticketCode">CL-000000</strong>
+                        <div class="barcode" aria-hidden="true"></div>
+                        <span class="side-date">07 · 11 · 26</span>
+                    </div>
+                </article>
+                <div class="ticket-actions">
+                    <button class="button button-primary" id="downloadTicket" type="button">
+                        <span aria-hidden="true">↓</span><span>Baixar ingresso</span>
+                    </button>
+                    <a class="button button-whatsapp" id="whatsappLink" href="#" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="whatsapp-icon" aria-hidden="true">◉</span><span>Enviar ingresso pelo
+                            WhatsApp</span>
+                    </a>
+                </div>
+                <p class="whatsapp-note">O WhatsApp abrirá com a mensagem pronta. Você ainda precisará confirmar o envio
+                    por lá.</p>
+                <button class="text-button back-button" id="backHome" type="button">← Voltar para o CineLove</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
